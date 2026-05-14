@@ -1,3 +1,18 @@
+terraform {
+  required_version = "1.15.2"
+
+  cloud {
+    
+    organization = "Tanishqterraform"
+
+    workspaces {
+      name = "terraform"
+    }
+  }
+}
+
+
+
 module "network" {
   source = "./modules/network"
 
